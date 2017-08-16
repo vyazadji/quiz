@@ -1,1 +1,6 @@
-The quize for the job interview.
+## The quiz for the job interview.
+
+#### Run:
+```bash
+docker-compose up
+```

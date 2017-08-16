@@ -1,0 +1,14 @@
+{
+  "name": "quiz",
+  "version": "0.0.1",
+  "description": "Quiz api",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "koa": "2.3.x"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 8.0.0"
+  }
+}

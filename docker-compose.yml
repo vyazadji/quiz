@@ -4,7 +4,7 @@ services:
     build: ./api
     volumes:
     - ./api/:/src:cached
-    command: sh -c "while true; do sleep 1000; done; npm install;"
+    command: sh -c "npm install && node index.js"
     ports:
     - 8080:8080
 
