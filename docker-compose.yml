@@ -10,8 +10,21 @@ services:
 
   ui:
     build: ./ui
+    #image: ecomputer/angular4
     volumes:
-    - ./ui/:/src:cached
-    command: sh -c "while true; do sleep 1000; done; npm install;"
+    - ./ui/quiz:/src
+    command: sh -c "npm install && ng serve --host 0.0.0.0 --port 4200"
+    #command: sh -c "while true; do sleep 1000; done; npm install;"
     ports:
-    - 8081:8081
+    - 4200:4200
+
+
+  mongo:
+    image: 'mongo:3.4.1'
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data/db
+
+volumes:
+  mongo:
