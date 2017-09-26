@@ -1,6 +1,6 @@
-FROM node:8.3
+FROM ecomputer/angular4
 
-# Create app directory
+# create app directory
 WORKDIR /src
 
-EXPOSE 8081
+EXPOSE 4200
